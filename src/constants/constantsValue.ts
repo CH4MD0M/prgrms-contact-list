@@ -1,0 +1,4 @@
+const GROUPS_STORAGE_KEY = "groups";
+const CONTACTS_STORAGE_KEY = "contacts";
+
+export { GROUPS_STORAGE_KEY, CONTACTS_STORAGE_KEY };
