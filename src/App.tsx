@@ -1,8 +1,20 @@
+import ModalProvider from "context/modal/ModalProvider";
+import ModalRenderer from "components/common/ModalRenderer";
+import ContactContainer from "components/ContactContainer";
+
 function App() {
   return (
-    <div className="p-4 bg-blue-500 text-white">
-      <h1 className="text-2xl font-bold">Hello, Tailwind CSS!</h1>
-    </div>
+    <ModalProvider>
+      <div className="container mx-auto p-4">
+        <div className="flex justify-center">
+          <h1 className="text-[40px] font-bold mb-4 inline-block">
+            연락처 리스트
+          </h1>
+        </div>
+        <ContactContainer />
+      </div>
+      <ModalRenderer />
+    </ModalProvider>
   );
 }
 
